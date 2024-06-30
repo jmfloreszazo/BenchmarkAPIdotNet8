@@ -1,0 +1,6 @@
+@BenchmarkAPI_HostAddress = http://localhost:5044
+
+GET {{BenchmarkAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
