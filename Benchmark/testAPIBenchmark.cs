@@ -13,7 +13,7 @@ public class testAPIBenchmark
     private readonly APIMinimalClient _apiMinimalClient= new APIMinimalClient();
     private readonly APIFastEndpointClient _apiFastEndpointClient = new APIFastEndpointClient();
 
-    [Benchmark]
+    [Benchmark(Baseline = true)]
     public async Task TestRestAPIControllerAsync()
     {
         for (int i = 0; i < IterationCount; i++)
